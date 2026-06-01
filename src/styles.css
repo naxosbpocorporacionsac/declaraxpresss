@@ -1318,6 +1318,8 @@ h1 em, h2 em, h3 em, h4 em { font-family: var(--font-display); font-style: itali
    ========================================================= */
 @media (max-width: 1024px) {
   .nav-links { display: none; }
+  .nav-inner { justify-content: space-between; }
+  .nav-cta { margin-left: auto; }
   .somos-grid, .sync-grid, .process-head, .hacemos-head, .contacto-grid, .planes-grid, .testi-grid {
     grid-template-columns: 1fr; gap: 32px;
   }
