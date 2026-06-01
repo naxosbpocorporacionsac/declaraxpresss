@@ -384,7 +384,7 @@ h1 em, h2 em, h3 em, h4 em { font-family: var(--font-display); font-style: itali
    QUIÉNES / AUDITING split
    ========================================================= */
 .somos {
-  padding: 100px 0 100px;
+  padding: 72px 0;
 }
 .somos-statement {
   text-align: center;
@@ -570,7 +570,7 @@ h1 em, h2 em, h3 em, h4 em { font-family: var(--font-display); font-style: itali
    PLANES / SYNC — split mint + image
    ========================================================= */
 .sync {
-  padding: 100px 0;
+  padding: 72px 0;
 }
 .sync-centered {
   text-align: center;
@@ -649,10 +649,10 @@ h1 em, h2 em, h3 em, h4 em { font-family: var(--font-display); font-style: itali
 .planes-band {
   background: var(--navy);
   color: #fff;
-  padding: 100px 0 140px;
+  padding: 72px 0 100px;
   position: relative;
   overflow: hidden;
-  margin-bottom: -80px;
+  margin-bottom: -40px;
 }
 .planes-band::before {
   content: ""; position: absolute; inset: 0;
@@ -668,12 +668,12 @@ h1 em, h2 em, h3 em, h4 em { font-family: var(--font-display); font-style: itali
 .planes-band h2 {
   font-family: var(--font-display);
   font-weight: 700;
-  font-size: clamp(40px, 5vw, 64px);
+  font-size: clamp(28px, 3.6vw, 52px);
   line-height: 1.03;
   letter-spacing: -0.028em;
   margin: 16px 0 14px;
   text-align: center;
-  max-width: 18ch;
+  white-space: nowrap;
   margin-left: auto; margin-right: auto;
 }
 .planes-band h2 em { font-family: var(--font-display); font-style: italic; font-weight: 400; color: var(--coral-300); }
@@ -844,7 +844,7 @@ h1 em, h2 em, h3 em, h4 em { font-family: var(--font-display); font-style: itali
    PASOS
    ========================================================= */
 .pasos {
-  padding: 80px 0;
+  padding: 64px 0;
   background: var(--cream-2);
 }
 /* Mobile slider — oculto en desktop */
@@ -912,7 +912,7 @@ h1 em, h2 em, h3 em, h4 em { font-family: var(--font-display); font-style: itali
    FORMALIZA
    ========================================================= */
 .formaliza {
-  padding: 100px 0;
+  padding: 72px 0;
   background: var(--navy);
   color: #fff;
 }
@@ -948,7 +948,7 @@ h1 em, h2 em, h3 em, h4 em { font-family: var(--font-display); font-style: itali
    SUNAT ALERT
    ========================================================= */
 .sunat-alert {
-  padding: 100px 0;
+  padding: 72px 0;
   background: #fff;
   color: var(--ink);
 }
@@ -982,7 +982,7 @@ h1 em, h2 em, h3 em, h4 em { font-family: var(--font-display); font-style: itali
 /* =========================================================
    TESTIMONIALS
    ========================================================= */
-.testi { padding: 100px 0 100px; }
+.testi { padding: 72px 0; }
 .testi-head { text-align: center; margin-bottom: 56px; }
 .testi-head h2, .testi-head h3 {
   font-family: var(--font-display);
@@ -1046,7 +1046,7 @@ h1 em, h2 em, h3 em, h4 em { font-family: var(--font-display); font-style: itali
    CITA
    ========================================================= */
 .cita {
-  padding: 80px 0;
+  padding: 64px 0;
   background: var(--cream-2);
   border-top: 1px solid var(--line);
 }
@@ -1086,7 +1086,7 @@ h1 em, h2 em, h3 em, h4 em { font-family: var(--font-display); font-style: itali
    OTROS SERVICIOS
    ========================================================= */
 .otros-serv {
-  padding: 100px 0;
+  padding: 72px 0;
   background: var(--cream-2);
 }
 .otros-serv-inner {
@@ -1127,7 +1127,7 @@ h1 em, h2 em, h3 em, h4 em { font-family: var(--font-display); font-style: itali
    CTA / CONTACTO
    ========================================================= */
 .cta-band {
-  padding: 100px 0 48px;
+  padding: 72px 0 48px;
   background: var(--navy);
   color: #fff;
 }
@@ -1350,7 +1350,7 @@ h1 em, h2 em, h3 em, h4 em { font-family: var(--font-display); font-style: itali
   .hero-stat-1, .hero-stat-2, .hero-stat-3 { position: static; margin: 8px 0; }
 
   /* Somos */
-  .somos { padding: 60px 0; }
+  .somos { padding: 40px 0; }
   .somos-photo { height: 320px; }
   .value-cards { grid-template-columns: 1fr; }
   .somos-statement { margin-top: 40px; margin-bottom: 40px; }
@@ -1361,26 +1361,26 @@ h1 em, h2 em, h3 em, h4 em { font-family: var(--font-display); font-style: itali
   .pasos-slider { display: block; text-align: center; }
 
   /* Proceso */
-  .process { padding: 60px 0; }
+  .process { padding: 40px 0; }
   .proc-row { grid-template-columns: 28px 1fr; gap: 16px; }
 
   /* Sync */
-  .sync { padding: 60px 0; }
+  .sync { padding: 40px 0; }
   .sync-r { height: 240px; }
 
   /* Planes */
-  .planes-band { padding: 60px 0 100px; }
+  .planes-band { padding: 40px 0 60px; }
   .planes-grid { grid-template-columns: 1fr; padding: 0 20px; }
 
   /* Servicios */
-  .servicios { padding: 60px 0; }
+  .servicios { padding: 40px 0; }
   .servicios-head { grid-template-columns: 1fr; gap: 16px; }
   .servicios-cats { grid-template-columns: 1fr; }
   .cat-list { flex-direction: row; flex-wrap: wrap; }
   .cat-list button { padding: 12px 14px; font-size: 14px; border-bottom: none; }
 
   /* Testimonios */
-  .testi { padding: 60px 0; }
+  .testi { padding: 40px 0; }
   .testi-grid { grid-template-columns: 1fr; }
   .testi-card { flex: 0 0 100%; }
 
@@ -1396,7 +1396,7 @@ h1 em, h2 em, h3 em, h4 em { font-family: var(--font-display); font-style: itali
   .formaliza-card { padding: 32px 24px; }
 
   /* Contacto */
-  .cta-band { padding: 60px 0; }
+  .cta-band { padding: 40px 0; }
   .contacto-grid {
     grid-template-columns: 1fr;
     grid-template-rows: auto;
