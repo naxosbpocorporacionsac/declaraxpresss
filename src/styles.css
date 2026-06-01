@@ -1264,9 +1264,7 @@ h1 em, h2 em, h3 em, h4 em { font-family: var(--font-display); font-style: itali
   letter-spacing: 0.08em;
   line-height: 1;
   text-align: center;
-  color: transparent;
-  -webkit-text-stroke: 1.5px rgba(255,255,255,0.18);
-          text-stroke: 1.5px rgba(255,255,255,0.18);
+  color: #0A2A66;
   margin: 0; padding: 16px 0 12px;
   white-space: nowrap; overflow: hidden;
   user-select: none;
