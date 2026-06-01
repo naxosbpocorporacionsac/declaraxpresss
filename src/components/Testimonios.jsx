@@ -101,7 +101,7 @@ export default function Testimonios() {
             <button key={i} className={`testi-dot${i === idx ? ' active' : ''}`} onClick={() => setIdx(i)} aria-label={`Ir a ${i + 1}`} />
           ))}
         </div>
-        <button className="testi-arrow" onClick={next} disabled={idx === MAX} aria-label="Siguiente">
+        <button className="testi-arrow" onClick={next} disabled={idx === maxIdx()} aria-label="Siguiente">
           <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
             <path d="M9 18l6-6-6-6" strokeLinecap="round" strokeLinejoin="round" />
           </svg>
