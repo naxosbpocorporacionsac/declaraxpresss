@@ -22,14 +22,18 @@ const CheckIcon = () => (
 export default function Formaliza() {
   return (
     <section className="formaliza">
+      <div className="container sec-head-wrap">
+        <div className="sec-head sec-head--light">
+          <h2>Constituye tu <em>empresa</em></h2>
+        </div>
+      </div>
       <div className="container formaliza-inner">
         <div className="formaliza-img">
           <img src="/assets/formaliza.jpg" alt="Constituye tu empresa hoy" />
         </div>
         <div className="formaliza-r">
           <span className="eyebrow eyebrow--on-dark"><span className="dot"></span>Constitución de empresas</span>
-          <h2>Constituye tu empresa <em>Hoy</em></h2>
-          <p className="formaliza-sub">Formaliza fácil y rápido sin moverte de tu negocio.</p>
+          <h3 className="sec-sub">Formaliza fácil y rápido sin moverte de tu negocio.</h3>
           <p className="formaliza-precio">Desde <strong>S/ 370</strong> — Te asesoramos en:</p>
           <ul className="formaliza-list">
             {items.map(item => (

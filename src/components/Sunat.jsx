@@ -20,15 +20,18 @@ const CheckIcon = () => (
 export default function Sunat() {
   return (
     <section className="sunat-alert">
+      <div className="container sec-head-wrap">
+        <div className="sec-head">
+          <h2>¿Recibiste una comunicación de <em>SUNAT</em> o de <em>SUNAFIL</em>?</h2>
+        </div>
+      </div>
       <div className="container sunat-inner">
         <div className="sunat-img">
           <img src="/assets/sunat.jpg" alt="Defensa tributaria SUNAT" />
         </div>
         <div className="sunat-r">
-          <span className="eyebrow"><span className="dot"></span>Defensa tributaria</span>
-          <h2>¿Recibiste una comunicación de <em>SUNAT</em> o de <em>SUNAFIL</em>?</h2>
           <p className="sunat-intro">
-            No sabes qué hacer o cómo responder cartas inductivas, órdenes de pago o coactivas. <strong>Evita problemas futuros.</strong>
+            Y no sabes qué hacer o cómo responder cartas inductivas, órdenes de pago o coactivas. <strong>Evita problemas futuros.</strong>
           </p>
           <ul className="sunat-steps">
             {steps.map(s => (

@@ -79,8 +79,7 @@ export default function Testimonios() {
           {testimonials.map(({ cls, quote, author, role }, i) => (
             <div key={i} className={`testi-card ${cls}`}>
               <div className="body">
-                <div className="qm">"</div>
-                <p className="quote">{quote}</p>
+                <p className="quote"><span className="qm">"</span>{quote}"</p>
                 <div className="author">{author}</div>
                 <div className="role">{role}</div>
               </div>

@@ -343,6 +343,44 @@ h1 em, h2 em, h3 em, h4 em { font-family: var(--font-display); font-style: itali
 }
 
 /* =========================================================
+   SEC-HEAD — shared centered title for image+text sections
+   ========================================================= */
+.sec-head {
+  text-align: center;
+  margin-bottom: 40px;
+}
+.sec-head h2 {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: clamp(32px, 4vw, 54px);
+  line-height: 1.06;
+  letter-spacing: -0.028em;
+  color: var(--navy);
+  margin: 0;
+}
+.sec-head h2 em { font-style: italic; font-weight: 400; color: var(--coral); }
+.sec-head--light h2 { color: #fff; }
+.sec-head--light h2 em { color: var(--coral-300); }
+.sec-head-wrap { margin-bottom: 0; }
+.sec-sub {
+  font-family: var(--font-display);
+  font-size: clamp(18px, 2.2vw, 26px);
+  font-weight: 600;
+  color: rgba(255,255,255,0.85);
+  margin: 0 0 16px;
+  letter-spacing: -0.015em;
+}
+.somos-sub {
+  font-family: var(--font-display);
+  font-size: clamp(18px, 2.2vw, 26px);
+  font-weight: 600;
+  color: var(--navy);
+  margin: 0 0 16px;
+  letter-spacing: -0.015em;
+}
+.somos-sub em { font-style: italic; color: var(--coral); }
+
+/* =========================================================
    QUIÉNES / AUDITING split
    ========================================================= */
 .somos {
@@ -969,7 +1007,8 @@ h1 em, h2 em, h3 em, h4 em { font-family: var(--font-display); font-style: itali
 .testi-card .body { padding: 24px 22px 26px; }
 .testi-card .qm {
   font-family: var(--font-display); font-style: italic;
-  font-size: 28px; line-height: 1; color: var(--coral);
+  font-size: 18px; line-height: 1; color: var(--coral);
+  margin-right: 2px;
 }
 .testi-card .quote { font-size: 13.5px; line-height: 1.5; color: var(--ink-700); margin: 6px 0 14px; }
 .testi-card .author { font-size: 12px; font-weight: 600; color: var(--navy); letter-spacing: -0.005em; }
@@ -1090,6 +1129,19 @@ h1 em, h2 em, h3 em, h4 em { font-family: var(--font-display); font-style: itali
 
 /* Info izquierda */
 .contacto-info .eyebrow { margin-bottom: 16px; }
+.contacto-titulo {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: clamp(28px, 3vw, 42px);
+  letter-spacing: -0.025em;
+  color: #fff;
+  margin: 0 0 28px;
+}
+.contacto-mapa {
+  margin-top: 48px;
+  border-radius: var(--r-lg);
+  overflow: hidden;
+}
 .contacto-info h2 {
   font-family: var(--font-display);
   font-weight: 700;
@@ -1198,13 +1250,12 @@ h1 em, h2 em, h3 em, h4 em { font-family: var(--font-display); font-style: itali
   letter-spacing: -0.03em;
   line-height: 1;
   text-align: center;
-  color: transparent;
-  -webkit-text-stroke: 1px rgba(255,255,255,0.15);
-  margin: 0; padding: 16px 0 12px;
+  color: rgba(255,255,255,0.18);
+  margin: 0; padding: 20px 0 16px;
   white-space: nowrap; overflow: hidden;
   user-select: none;
 }
-.footer-wordmark em { font-family: var(--font-display); font-style: italic; font-weight: 400; -webkit-text-stroke: 1px rgba(255,138,102,0.22); }
+.footer-wordmark em { font-family: var(--font-display); font-style: italic; font-weight: 400; color: rgba(0,168,107,0.35); }
 
 /* =========================================================
    WHATSAPP FLOAT

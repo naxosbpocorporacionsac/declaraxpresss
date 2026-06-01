@@ -16,6 +16,9 @@ const CheckIcon = () => (
 export default function Somos() {
   return (
     <section className="somos container" id="somos">
+      <div className="sec-head">
+        <h2>¿Por qué <em>elegirnos</em>?</h2>
+      </div>
       <div className="somos-grid">
         <div className="somos-photo">
           <img className="somos-photo-img" src="/assets/team-photo.png" alt="Equipo Declara Xpress" />
@@ -34,7 +37,7 @@ export default function Somos() {
 
         <div className="somos-r">
           <span className="eyebrow"><span className="dot"></span>¿Por qué elegirnos?</span>
-          <h2>Somos un equipo con <em>experiencia</em> que quiere ser parte de tu éxito.</h2>
+          <h3 className="somos-sub">Somos un equipo con <em>experiencia</em> que quiere ser parte de tu éxito.</h3>
           <p className="body">
             Queremos colaborar con tu empresa y ser parte de tu éxito, asegurandote una contabilidad optimizada con IA en tus operaciones y una oportuna declaración de impuestos. Te ayudamos a evitar sanciones y multas de SUNAT.
           </p>

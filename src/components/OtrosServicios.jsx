@@ -23,13 +23,16 @@ const CheckIcon = () => (
 export default function OtrosServicios() {
   return (
     <section className="otros-serv">
+      <div className="container sec-head-wrap">
+        <div className="sec-head">
+          <h2>Otros Servicios <em>Contables</em></h2>
+        </div>
+      </div>
       <div className="container otros-serv-inner">
         <div className="otros-serv-img">
           <img src="/assets/otros-servicios.jpg" alt="Otros Servicios Contables" />
         </div>
         <div className="otros-serv-r">
-          <span className="eyebrow"><span className="dot"></span>Servicios adicionales</span>
-          <h2>Otros Servicios <em>Contables</em></h2>
           <ul className="otros-serv-list">
             {items.map(item => (
               <li key={item}><CheckIcon />{item}</li>
