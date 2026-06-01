@@ -1411,9 +1411,12 @@ h1 em, h2 em, h3 em, h4 em { font-family: var(--font-display); font-style: itali
   .footer { padding: 16px 0 0; }
   .footer-copy { padding-bottom: 12px; }
   .footer-wordmark {
-    font-size: clamp(36px, 13vw, 80px);
+    font-size: clamp(24px, 7.5vw, 48px);
     color: rgba(255,255,255,0.35);
     padding: 10px 0 8px;
+    letter-spacing: 0.04em;
+    white-space: nowrap;
+    overflow: visible;
   }
 
   /* WhatsApp float */
