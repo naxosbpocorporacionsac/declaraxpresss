@@ -1,3 +1,5 @@
+import Logo from './Logo';
+
 export default function Footer() {
   return (
     <footer className="footer">
@@ -6,7 +8,7 @@ export default function Footer() {
         <p>© 2026 Declara Xpress · Todos los derechos reservados.</p>
       </div>
       <div className="footer-logo-wrap">
-        <img src="/assets/declara-xpress-logo.png" alt="Declara Xpress" className="footer-logo-bottom" />
+        <Logo size={52} onDark={true} />
       </div>
     </footer>
   );
