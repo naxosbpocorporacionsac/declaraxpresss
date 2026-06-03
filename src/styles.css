@@ -71,7 +71,7 @@ h1, h2, h3, h4, h5, h6 { font-family: var(--font-display); font-weight: 700; }
 h1 em, h2 em, h3 em, h4 em { font-family: var(--font-display); font-style: italic; font-weight: 700; }
 
 /* Logo image in nav + footer */
-.nav-logo-img { height: 51px; width: auto; display: block; }
+.nav-logo-img { height: 66px; width: auto; display: block; }
 .nav-logo-pill {
   display: inline-flex; align-items: center; justify-content: center;
 }
@@ -201,9 +201,9 @@ h1 em, h2 em, h3 em, h4 em { font-family: var(--font-display); font-style: itali
   position: absolute; inset: 0;
   background: linear-gradient(
     to bottom,
-    rgba(10, 26, 46, 0.62) 0%,
-    rgba(10, 26, 46, 0.75) 60%,
-    rgba(10, 26, 46, 0.88) 100%
+    rgba(15, 61, 145, 0.65) 0%,
+    rgba(15, 61, 145, 0.78) 60%,
+    rgba(10, 42, 102, 0.90) 100%
   );
   backdrop-filter: blur(1px);
   -webkit-backdrop-filter: blur(1px);
@@ -232,8 +232,9 @@ h1 em, h2 em, h3 em, h4 em { font-family: var(--font-display); font-style: itali
 .hero h1 em {
   font-family: var(--font-display);
   font-style: normal;
-  font-weight: 800;
+  font-weight: 900;
   color: var(--coral-300);
+  -webkit-text-stroke: 0.5px var(--coral-300);
 }
 .hero-subtitle {
   font-size: clamp(15px, 1.4vw, 18px);
