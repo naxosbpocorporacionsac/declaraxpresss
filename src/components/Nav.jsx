@@ -16,7 +16,13 @@ export default function Nav() {
         <a className="nav-logo" href="#top" aria-label="Declara Xpress">
           <img className="nav-logo-img" src="/assets/declara-xpress-logo.png" alt="Declara Xpress" />
         </a>
-
+        <div className="nav-links">
+          <a href="#somos">Nosotros</a>
+          <a href="#planes">Planes</a>
+          <a href="#pasos">Proceso</a>
+          <a href="#otros-servicios">Servicios</a>
+          <a href="#contacto">Contacto</a>
+        </div>
         <div className="nav-cta">
           <a className="btn btn-cream" href={waUrl} target="_blank" rel="noopener noreferrer">
             <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor">
