@@ -245,7 +245,7 @@ h1 em, h2 em, h3 em, h4 em { font-family: var(--font-display); font-style: itali
   margin: 0 auto 32px;
 }
 .hero-subtitle strong { color: var(--coral-300); font-weight: 700; }
-.hero-cta-btn { font-size: 16px; padding: 15px 36px; font-weight: 700; }
+.hero-cta-btn { font-size: 16px; padding: 15px 36px; font-weight: 700; margin-top: 28px; display: inline-flex; }
 
 /* Hero stage — center map + person + floating cards */
 .hero-stage {
