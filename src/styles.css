@@ -141,35 +141,37 @@ h1 em, h2 em, h3 em, h4 em { font-family: var(--font-display); font-style: itali
 
 
 /* =========================================================
-   TOPBAR
+   HERO TOPBAR (overlay, no background)
    ========================================================= */
-.topbar {
-  background: var(--navy);
-  padding: 10px 0;
+.hero-topbar {
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  z-index: 10;
+  padding: 16px 0;
 }
-.topbar-inner {
+.hero-topbar-inner {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-.topbar-logo {
-  height: 36px;
+.hero-topbar-logo {
+  height: 40px;
   width: auto;
   display: block;
 }
-.topbar-email {
+.hero-topbar-email {
   display: inline-flex;
   align-items: center;
   gap: 7px;
   font-size: 13.5px;
   font-weight: 500;
-  color: rgba(255,255,255,0.85);
+  color: rgba(255,255,255,0.88);
   transition: color var(--dur);
 }
-.topbar-email:hover { color: var(--coral-300); }
+.hero-topbar-email:hover { color: var(--coral-300); }
 @media (max-width: 640px) {
-  .topbar-logo { height: 28px; }
-  .topbar-email { font-size: 12px; }
+  .hero-topbar-logo { height: 28px; }
+  .hero-topbar-email { font-size: 11px; }
 }
 
 /* =========================================================
