@@ -141,6 +141,38 @@ h1 em, h2 em, h3 em, h4 em { font-family: var(--font-display); font-style: itali
 
 
 /* =========================================================
+   TOPBAR
+   ========================================================= */
+.topbar {
+  background: var(--navy);
+  padding: 10px 0;
+}
+.topbar-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.topbar-logo {
+  height: 36px;
+  width: auto;
+  display: block;
+}
+.topbar-email {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  font-size: 13.5px;
+  font-weight: 500;
+  color: rgba(255,255,255,0.85);
+  transition: color var(--dur);
+}
+.topbar-email:hover { color: var(--coral-300); }
+@media (max-width: 640px) {
+  .topbar-logo { height: 28px; }
+  .topbar-email { font-size: 12px; }
+}
+
+/* =========================================================
    NAV
    ========================================================= */
 .nav {

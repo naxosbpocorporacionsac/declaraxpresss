@@ -1,5 +1,6 @@
 import Analytics from './components/Analytics';
 import Nav from './components/Nav';
+import TopBar from './components/TopBar';
 import Hero from './components/Hero';
 import Somos from './components/Somos';
 import Planes from './components/Planes';
@@ -16,6 +17,7 @@ export default function App() {
   return (
     <>
       <Analytics />
+      <TopBar />
       <Nav />
       <Hero />
       <Somos />
