@@ -1,10 +1,6 @@
 export default function Hero() {
   return (
     <header className="hero" id="top">
-      <div className="hero-bg">
-        <img src="/assets/2151908068.jpg" alt="" className="hero-bg-img" />
-      </div>
-
       <div className="hero-left">
         <img src="/assets/declara-xpress-logo.png" alt="Declara Xpress" className="hero-logo" />
         <h1>Contabilidad Optimizada con IA para mypes, Emprendedores y Profesionales Independientes.</h1>
@@ -18,8 +14,9 @@ export default function Hero() {
           info@declaraxpress.com
         </a>
       </div>
-
-      <div className="hero-right"></div>
+      <div className="hero-right">
+        <img src="/assets/2151908068.jpg" alt="" className="hero-img" />
+      </div>
     </header>
   );
 }
