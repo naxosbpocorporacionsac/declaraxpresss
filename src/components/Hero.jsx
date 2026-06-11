@@ -21,7 +21,7 @@ export default function Hero() {
 
       {/* Contenido centrado */}
       <div className="hero-content">
-        <h1>Contabilidad Optimizada con IA para mypes, Emprendedores y Profesionales Independientes.</h1>
+        <h1>Contabilidad Optimizada con IA para las Micro y Pequeñas empresas, Emprendedores y profesionales independientes.</h1>
         <p className="hero-subtitle">En DeclaraXpress.com tenemos planes de servicios contables para tu negocio desde <strong>S/170 al mes</strong>, incluido IGV.</p>
         <a className="btn btn-coral hero-cta-btn" href="#planes">Elegir mi plan</a>
       </div>
