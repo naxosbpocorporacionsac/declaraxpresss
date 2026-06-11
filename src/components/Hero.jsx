@@ -5,8 +5,6 @@ export default function Hero() {
         className="hero-bg-zoom"
         style={{ backgroundImage: 'url(/assets/hero-declara-difuminado.jpg)' }}
       ></div>
-      <div className="hero-overlay"></div>
-
       {/* Topbar: logo izq, email der */}
       <div className="hero-topbar">
         <div className="container hero-topbar-inner">
