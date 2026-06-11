@@ -5,9 +5,9 @@ export default function HeroB() {
         className="hero-bg-zoom"
         style={{ backgroundImage: 'url(/assets/hero-declara.jpg)' }}
       ></div>
-      <div className="hero-overlay hero-overlay--b"></div>
+      <div className="hero-overlay"></div>
 
-      <div className="hero-content hero-content--b">
+      <div className="hero-content">
         <img src="/assets/declara-xpress-logo.png" alt="Declara Xpress" className="hero-logo" />
         <h1>Contabilidad Optimizada con IA para mypes, Emprendedores y Profesionales Independientes.</h1>
         <p className="hero-subtitle">En DeclaraXpress.com tenemos planes de servicios contables para tu negocio desde <strong>S/170 al mes</strong>, incluido IGV.</p>
