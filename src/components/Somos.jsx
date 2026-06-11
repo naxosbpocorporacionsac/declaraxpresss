@@ -3,7 +3,8 @@ const items = [
   'Información en línea',
   'Informe de impuestos mensuales',
   'Declaración oportuna de impuestos SUNAT',
-  'ERP contable con IA y sistema SIRE con certificación de ciberseguridad',
+  'ERP contable 100% en la nube, integrado con IA con certificaciones de ciberseguridad.',
+  'Sistema optimizado para SIRE SUNAT con certificaciones de ciberseguridad.',
   'Honorarios a la medida de tu negocio',
   'Te ayudamos a evitar sanciones y multas de SUNAT.',
 ];
