@@ -275,7 +275,7 @@ h1 em, h2 em, h3 em, h4 em { font-family: var(--font-display); font-style: itali
 }
 .hero h1 em { font-style: normal; font-weight: 900; color: #fff; }
 .hero-subtitle {
-  font-size: clamp(16px, 1.6vw, 22px);
+  font-size: clamp(24px, 2.4vw, 33px);
   font-weight: 500;
   line-height: 1.5;
   color: rgba(255,255,255,0.90);
