@@ -1,5 +1,4 @@
 import Analytics from './components/Analytics';
-import Hero from './components/Hero';
 import HeroB from './components/HeroB';
 import Somos from './components/Somos';
 import Planes from './components/Planes';
@@ -12,17 +11,11 @@ import Testimonios from './components/Testimonios';
 import CtaBand from './components/CtaBand';
 import Footer from './components/Footer';
 
-function getHero() {
-  const p = window.location.pathname;
-  if (p.startsWith('/b')) return <HeroB />;
-  return <Hero />;
-}
-
 export default function App() {
   return (
     <>
       <Analytics />
-      {getHero()}
+      <HeroB />
       <Somos />
       <Planes />
       <Pasos />
