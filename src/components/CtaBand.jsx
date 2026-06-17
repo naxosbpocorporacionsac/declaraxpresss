@@ -2,7 +2,6 @@ import { useState, useRef } from 'react';
 import ReCAPTCHA from 'react-google-recaptcha';
 
 const RECAPTCHA_KEY = import.meta.env.VITE_RECAPTCHA_SITE_KEY || '';
-const WEB3FORMS_KEY = import.meta.env.VITE_WEB3FORMS_KEY || '';
 const waNumber = import.meta.env.VITE_WA_NUMBER || '51999999999';
 
 const necesidades = [
@@ -40,34 +39,30 @@ export default function CtaBand() {
     setError('');
     setSending(true);
 
-    if (WEB3FORMS_KEY) {
-      try {
-        const res = await fetch('https://api.web3forms.com/submit', {
-          method: 'POST',
-          headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
-          body: JSON.stringify({
-            access_key: WEB3FORMS_KEY,
-            subject: `Nueva consulta de ${form.nombre} — Declara Xpress`,
-            name: form.nombre,
-            email: form.email || 'sin-email@declaraxpress.com',
-            whatsapp: form.whatsapp,
-            ruc: form.ruc || '—',
-            message: form.mensaje || '—',
-          }),
-        });
-        const data = await res.json();
-        if (data.success) {
-          setSuccess(true);
-          window.gtagConversion?.();
-          setForm({ nombre: '', email: '', mensaje: '', whatsapp: '', ruc: '' });
-          setCaptchaToken('');
-          recaptchaRef.current?.reset();
-        } else {
-          setError('No se pudo enviar. Intenta por WhatsApp.');
-        }
-      } catch {
-        setError('Error de conexión. Intenta por WhatsApp.');
+    try {
+      const res = await fetch('/contact.php', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
+        body: JSON.stringify({
+          nombre: form.nombre,
+          email: form.email,
+          whatsapp: form.whatsapp,
+          ruc: form.ruc,
+          mensaje: form.mensaje,
+        }),
+      });
+      const data = await res.json();
+      if (data.success) {
+        setSuccess(true);
+        window.gtagConversion?.();
+        setForm({ nombre: '', email: '', mensaje: '', whatsapp: '', ruc: '' });
+        setCaptchaToken('');
+        recaptchaRef.current?.reset();
+      } else {
+        setError(data.message || 'No se pudo enviar. Intenta por WhatsApp.');
       }
+    } catch {
+      setError('Error de conexión. Intenta por WhatsApp.');
     }
 
     setSending(false);
