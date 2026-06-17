@@ -105,7 +105,7 @@ function PlanCard({ plan }) {
         ))}
       </ul>
       <div className="cta-row">
-        <a className={`btn ${cta.cls}`} href={waUrl(msg)} target="_blank" rel="noopener noreferrer">{cta.label}</a>
+        <a className={`btn ${cta.cls}`} href="#contacto">Solicitar Asesoría</a>
         <p className="plan-meta">{meta}</p>
       </div>
     </article>
