@@ -111,8 +111,8 @@ export default function CtaBand() {
                 <input id="whatsapp" name="whatsapp" type="tel" placeholder="+51 999 999 999" value={form.whatsapp} onChange={handle} />
               </div>
               <div className="form-group">
-                <label htmlFor="ruc">RUC a consultar</label>
-                <input id="ruc" name="ruc" type="text" placeholder="20XXXXXXXXX" maxLength={11} value={form.ruc} onChange={handle} />
+                <label htmlFor="ruc">RUC / DNI</label>
+                <input id="ruc" name="ruc" type="text" placeholder="RUC o DNI" maxLength={11} value={form.ruc} onChange={handle} />
               </div>
             </div>
             <div className="form-group">
