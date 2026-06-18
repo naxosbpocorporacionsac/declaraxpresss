@@ -1,5 +1,6 @@
 import Analytics from './components/Analytics';
 import HeroB from './components/HeroB';
+import WhatsAppFloat from './components/WhatsAppFloat';
 import Somos from './components/Somos';
 import Planes from './components/Planes';
 import Pasos from './components/Pasos';
@@ -26,6 +27,7 @@ export default function App() {
       <Testimonios />
       <CtaBand />
       <Footer />
+      <WhatsAppFloat />
     </>
   );
 }
