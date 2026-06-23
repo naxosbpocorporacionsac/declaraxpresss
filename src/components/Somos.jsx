@@ -46,7 +46,7 @@ export default function Somos() {
               {items.map(item => (
                 <li key={item}><CheckIcon />{item}</li>
               ))}
-              <li><CheckIcon />Nuestros planes son ideados para cualquier tipo de empresa, desde las más pequeñas hasta empresas medianas.</li>
+              <li><CheckIcon />Nuestros planes han sido diseñados para pequeñas y medianas empresas de diversos sectores y actividades.</li>
             </ul>
             <a className="btn btn-coral somos-cta" href="#contacto">Solicitar Asesoría</a>
           </div>
