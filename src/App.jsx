@@ -1,4 +1,5 @@
 import QueHacemos from './pages/QueHacemos';
+import ConstitucionEmpresas from './pages/ConstitucionEmpresas';
 import Analytics from './components/Analytics';
 import HeroB from './components/HeroB';
 import WhatsAppFloat from './components/WhatsAppFloat';
@@ -17,6 +18,7 @@ const path = window.location.pathname;
 
 export default function App() {
   if (path === '/que-hacemos') return <QueHacemos />;
+  if (path === '/constitucion-empresas') return <ConstitucionEmpresas />;
 
   return (
     <>
