@@ -1,3 +1,4 @@
+import QueHacemos from './pages/QueHacemos';
 import Analytics from './components/Analytics';
 import HeroB from './components/HeroB';
 import WhatsAppFloat from './components/WhatsAppFloat';
@@ -12,7 +13,11 @@ import Testimonios from './components/Testimonios';
 import CtaBand from './components/CtaBand';
 import Footer from './components/Footer';
 
+const path = window.location.pathname;
+
 export default function App() {
+  if (path === '/que-hacemos') return <QueHacemos />;
+
   return (
     <>
       <Analytics />
