@@ -25,6 +25,7 @@ function NavyHeader() {
 
 export default function QueHacemos() {
   useEffect(() => {
+    document.title = 'Qué Hacemos — Declara Xpress';
     document.querySelector('meta[name="description"]')
       ?.setAttribute('content', 'Te aseguramos una contabilidad optimizada con IA en tus operaciones y una oportuna declaración de impuestos.');
   }, []);
