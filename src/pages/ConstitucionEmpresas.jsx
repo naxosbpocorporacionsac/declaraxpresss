@@ -26,7 +26,7 @@ function NavyHeader() {
 export default function ConstitucionEmpresas() {
   useEffect(() => {
     document.querySelector('meta[name="description"]')
-      ?.setAttribute('content', 'Constituye tu empresa fácil y rápido sin moverte de tu negocio. Desde S/ 370. Te asesoramos en todo el proceso de formalización.');
+      ?.setAttribute('content', 'Formaliza Fácil y rápido sin moverte de tu negocio.');
   }, []);
 
   return (
