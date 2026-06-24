@@ -25,6 +25,7 @@ function NavyHeader() {
 
 export default function ConstitucionEmpresas() {
   useEffect(() => {
+    document.title = 'Constitución de Empresas — Declara Xpress';
     document.querySelector('meta[name="description"]')
       ?.setAttribute('content', 'Formaliza Fácil y rápido sin moverte de tu negocio.');
   }, []);
